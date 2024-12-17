@@ -1,0 +1,200 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Eater&family=Inter:wght@100..900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    flex-direction: column; /* Keeps the nav at the top */
+    background-image: url(hoodie\ boy.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+}
+
+body::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+nav h1{
+    color: red;
+    font-family: "Eater", serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 200px;
+}
+
+
+.todo-list-container {
+    margin: auto; 
+    background: rgba(0, 0, 0, 0.4); 
+    border-radius: 15px; 
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); 
+    width: 100%;
+    max-width: 600px;
+    color: white; 
+}
+
+h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 16px;
+}
+
+.add-todo {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #4CAF50; 
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.add-todo:hover {
+    background: #45a049; 
+}
+
+.list {
+    margin-top: 20px;
+}
+
+.list-element-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
+
+.delete {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.delete:hover {
+    color: red;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .todo-list-container {
+        padding: 20px;
+        max-width: 90%;
+    }
+    
+    nav h1{
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .input-field {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .add-todo {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .list-element-container {
+        font-size: 1rem;
+    }
+
+    .delete {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav h1 {
+        font-size: 2rem;
+    }
+
+    .todo-list-container {
+        padding: 15px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .input-field {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .add-todo {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .list-element-container {
+        font-size: 0.9rem;
+    }
+
+    .delete {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    body {
+        background-position: left center;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+
